@@ -1,0 +1,22 @@
+@use "_variables.scss" as *;
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  color: $bg-color-primary;
+  background-color: #fffdf9;
+  @media (max-width: $breakpoint-width) {
+    font-size: 16px;
+  }
+}
+
+.example {
+  color: $bg-color-secondary;
+  background-color: $bg-color-primary;
+  // text-decoration: underline;
+  @media (max-width: $breakpoint-width) {
+    color: $bg-color-primary;
+    background-color: $bg-color-secondary;
+  }
+}
